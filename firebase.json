@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/resume",
+        "destination": "/docs/Sagar-Pathare-Resume-2020-06-03.pdf",
+        "type": 302
+      }
+    ]
+  }
+}
