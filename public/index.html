@@ -1,89 +1,568 @@
+
+<!--
+
+██╗  ██╗███████╗██╗     ██╗      ██████╗     ██████╗ ███████╗██╗   ██╗███████╗██╗      ██████╗ ██████╗ ███████╗██████╗     ██╗
+██║  ██║██╔════╝██║     ██║     ██╔═══██╗    ██╔══██╗██╔════╝██║   ██║██╔════╝██║     ██╔═══██╗██╔══██╗██╔════╝██╔══██╗    ██║
+███████║█████╗  ██║     ██║     ██║   ██║    ██║  ██║█████╗  ██║   ██║█████╗  ██║     ██║   ██║██████╔╝█████╗  ██████╔╝    ██║
+██╔══██║██╔══╝  ██║     ██║     ██║   ██║    ██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██║   ██║██╔═══╝ ██╔══╝  ██╔══██╗    ╚═╝
+██║  ██║███████╗███████╗███████╗╚██████╔╝    ██████╔╝███████╗ ╚████╔╝ ███████╗███████╗╚██████╔╝██║     ███████╗██║  ██║    ██╗
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝     ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝    ╚═╝
+
+Glad to meet you. Unfortunately, there's nothing great here!
+-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sagar Pathare | sspathare97</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="sspathare97, Sagar, Pathare, Programmer, Software, Engineer, Web, Developer, Frontend, Backend, Designer, Database" name="keywords">
+  <meta content="My personal website" name="description">
+  <meta content="Sagar Pathare" name="author">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.9/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.9/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.9/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <!-- Favicons -->
+  <link href="/img/favicon.png" rel="icon">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/custom.css?v=3" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
+      },
+      "button": {
+        "background": "#18d26e",
+        "text": "#ffffff"
       }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    },
+    "theme": "classic"
+  })});
+  </script>
+  
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">sspathare97</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </header><!-- #header -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="/img/bg.jpg?v=2" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <img src="/img/sspathare97.jpg" class="img-fluid photo">
+                <h2>I am Sagar Pathare</h2>
+                <p>A passionate programmer and developer. I love to solve real life problems using technology. I enjoy competitive programming. I am always passionate to learn about new technologies.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Know more about me</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 box">
+            <i class="fa fa-list-alt"></i>
+            <h4 class="title"><a href="javascript:void(0)">UI/UX Designer</a></h4>
+            <p class="description">I can turn software into easy-to-use products for your clients by gathering user requirements, designing graphic elements and building navigation components.</p>
+          </div>
+
+          <div class="col-md-4 box box-bg">
+            <i class="fa fa-code"></i>
+            <h4 class="title"><a href="javascript:void(0)">Full Stack Developer</a></h4>
+            <p class="description">I translate UI/UX designs to actual code and write server-side application logic. Having good analytical skills, I can formulate more efficient processes, solve problems and create a functional, seamless experience for the end-user.</p>
+          </div>
+
+          <div class="col-md-4 box">
+            <i class="fa fa-database"></i>
+            <h4 class="title"><a href="javascript:void(0)">Database Designer</a></h4>
+            <p class="description">I focus mainly on the programming aspect of database design; analyzing data inquiry needs, ensuring security of information and organizing layout to best present the information needed.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      Experience Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Experience</h3>
+          <p>Learning new dimensions of professional life, being an Entrepreneur. Passionate to learn about new technologies. Currently working on Data Science, and Scalable Applications. Experienced in Web and App Development. </p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="/img/tcet.jpg?v=2" alt="" class="img-fluid">
+                <div class="icon"><i class="fa fa-code"></i></div>
+              </div>
+              <h2 class="title"><a href="javascript:void(0)">ProDT Consulting Services Pvt. Ltd.</a></h2>
+              <p>
+                Designed and developed a highly scalable and fault-tolerant 100% serverless application with Node.js backend on AWS for flight search and ticket booking
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="/img/craton.jpg?v=2" alt="" class="img-fluid">
+                <div class="icon"><i class="fa fa-list-alt"></i></div>
+              </div>
+              <h2 class="title"><a href="javascript:void(0)">Delineate Innovations Pvt. Ltd.</a></h2>
+              <p>
+                Working on scalable web applications as a full stack developer and UI/UX designer. Built lightweight cross-platform apps for Web, Android, and iOS as well as engaging Progressive Web Apps (PWA)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="/img/alaska.jpg?v=2" alt="" class="img-fluid">
+                <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              </div>
+              <h2 class="title"><a href="javascript:void(0)">ALASKA</a></h2>
+              <p>
+                Collaborated with a team of independent researchers and developed a web scraper to download Twitter data for understanding and estimating the human behavior patterns 
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Achievements Section
+    ============================-->
+    <section id="achievements" class="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Achievements</h3>
+          <p>My passion for programming has helped me win many competitions and get CodeChef certification.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-question-circle"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Research Grant</a></h4>
+            <p class="description">Received research grant from the University for final year project 'Smart Dustbin'</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-certificate"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">CodeChef Certification</a></h4>
+            <p class="description">Received full scholarship for CodeChef Certified Data Structures and Algorithms Programme (CCDSAP) foundation exam <a href="/ccdsap" target="_blank">Click here to see the certificate</a></p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-puzzle-piece"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Enigma</a></h4>
+            <p class="description">3rd Place, Enigma Coding Competition at Techfest 2017, IIT Bombay</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-code"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">CodersBit</a></h4>
+            <p class="description">1st Place, CodersBit Coding Competition by InterviewBit at institute Level</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-lightbulb-o"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Idea Presentation</a></h4>
+            <p class="description">1st Place, Idea Presentation at TCET for 'nome.ga URL Shortener'
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-suitcase"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Hackathon</a></h4>
+            <p class="description">3rd Place, Hackathon Project Competition at TCET for 'Portfolio
+              Attainment'</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Figures Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Figures</h3>
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">25834</span>
+            <p>Lines Of Code</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">534</span>
+            <p>Hours Of Work</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">14</span>
+            <p>Completed Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">20658</span>
+            <p>Happy Users</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Projects</h3>
+          <p>I love to solve real life problems using technology. I am constantly looking for new project ideas which can help me enhance my skill set further.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-calculator"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Smart Dustbin</a></h4>
+            <p class="description">Dustbin for segregation of wet and dry waste based on the captured image using a deep learning model deployed on Raspberry Pi (Paper presented in IC-ISCN 2019)</p>
+          </div>
+          <div class="col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-link"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">nome.ga URL Shortener</a></h4>
+            <p class="description">URL Shortener which allows customization different options: Short URL- common English Word or a custom word, Expiry Period and Password
+              Protected Modification. <a href="https://nome.ga" target="_blank">Click here to visit the website</a></p>
+          </div>
+          <div class="col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-archive"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Activities Management System</a></h4>
+            <p class="description">Designed and developed a web portal for managing in-house college
+              activities and generating certificates.</p>
+          </div>
+          <div class="col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-tasks"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Zephyr 2016</a></h4>
+            <p class="description">Website for college technical festival 'Zephyr 2016'. <a href="https://tcetzephyr.tk" target="_blank">Click here to visit the website</a></p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Technology Stack Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Technology Stack</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="/img/logos/html.png" alt="HTML" title="HTML">
+          <img src="/img/logos/css.png" alt="CSS" title="CSS">
+          <img src="/img/logos/bs.png" alt="Bootstrap" title="Bootstrap">
+          <img src="/img/logos/js.png" alt="JavaScript" title="JavaScript">
+          <img src="/img/logos/nodejs.png" alt="Node.js" title="Node.js">
+          <img src="/img/logos/aws.png" alt="Amazon Web Services" title="Amazon Web Services">
+          <img src="/img/logos/git.png" alt="Git" title="Git">
+          <img src="/img/logos/python.png" alt="Python" title="Python">
+          <img src="/img/logos/cordova.png" alt="Apache Cordova" title="Apache Cordova">
+          <img src="/img/logos/cpp.png" alt="C++" title="C++">
+          <img src="/img/logos/c.png" alt="C" title="C">
+          <img src="/img/logos/ps.png" alt="Adobe Photoshop" title="Adobe Photoshop">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Activities Section
+    ============================-->
+    <section id="activities" class="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Activities</h3>
+          <p>I like to participate in co-curricular activities as they help in overall growth and development.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-calendar"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Event Organizer</a></h4>
+            <p class="description">Event Organizer for a coding event 'Quantum Code' in college technical festival 'Zephyr 2017'
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-volume-up"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Technical Seminar</a></h4>
+            <p class="description">As Head of 'CodeChef Tcetcodecyphers Campus Chapter', conducted a seminar on 'Introduction to Competitive Programming' for first year students
+              </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="fa fa-paint-brush"></i></div>
+            <h4 class="title"><a href="javascript:void(0)">Art Designer</a></h4>
+            <p class="description">Art Designer of Departmental Magazine 'Nimbus' for editions- 4, 5, 6, 7
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Hire Me Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>HIRE ME</h3>
+        <p>Over the years, I have acquired these skills and experience. I always give my best efforts in whatever I do, and this has enabled me to recognize my capabilities and limitations. I am a self motivated person and I try to exceed the expectations with high-quality work. I work well both as an individual contributor and also as a team member.</p>
+        <a class="cta-btn" href="/resume" target="_blank">Download My Resume</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Quotes Section
+    ============================-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Quotes I live by</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Challenges are what make life interesting and overcoming them is what makes life meaningful.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Vision without action is a daydream. Action without vision is a nightmare.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Live with no excuses and love with no regrets.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              It is better to be hated for what you are than to be loved for what you are not.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              He who does not fear death dies only once.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Love all, trust a few, do wrong to none.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              The only real mistake is the one from which we learn nothing.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Make sure you can say that you chose your life, you didn't settle for it. 
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <img src="/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Strive for excellence, not perfection.
+              <img src="/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+
+  </main>
+
+  <!--==========================
+    Footer- Contact
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 footer-info">
+            <h3>LET'S GET IN TOUCH</h3>
+            <p>Thank you for hearing me. I am always open to discussing new projects, creative ideas or opportunities. Need some help? Reach out to me!</p>
+            <p><strong>Email:</strong> sspathare97@gmail.com <br></p><br>
+            
+            <div class="social-links">
+              <a target="blank" href="https://www.linkedin.com/in/sspathare97" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a target="blank" href="https://github.com/sspathare97" class="github"><i class="fa fa-github"></i></a>
+              <a target="blank" href="https://www.codechef.com/users/sspathare97" class="code"><i class="fa fa-code"></i></a>
+              <a target="blank" href="https://www.instagram.com/sspathare97" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a target="blank" href="https://www.facebook.com/sspathare97" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a target="blank" href="https://twitter.com/sspathare97" class="twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Sagar Pathare</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <!-- Back to top -->
+  <a href="javascript:void(0)" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="/js/main.js?v=2"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143375530-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143375530-1');
+  </script>
+
+</body>
 </html>
