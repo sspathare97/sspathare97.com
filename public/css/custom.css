@@ -33,7 +33,7 @@
     background-image: url(../img/figures.jpg?v=2);
 }
 #call-to-action {
-    background-image: url(../img/hire-me.jpg?v=2);
+    background-image: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hire-me.jpg?v=2);
 }
 .services {
     background: #fff;
