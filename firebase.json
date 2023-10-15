@@ -22,6 +22,26 @@
         "source": "/meet",
         "destination": "https://calendly.com/sagar-pathare/0",
         "type": 301
+      },
+      {
+        "source": "/meeting",
+        "destination": "https://calendly.com/sagar-pathare/0",
+        "type": 301
+      },
+      {
+        "source": "/availability",
+        "destination": "https://calendly.com/sagar-pathare/0",
+        "type": 301
+      },
+      {
+        "source": "/schedule",
+        "destination": "https://calendly.com/sagar-pathare/0",
+        "type": 301
+      },
+      {
+        "source": "/schedule-a-meeting",
+        "destination": "https://calendly.com/sagar-pathare/0",
+        "type": 301
       }
     ]
   }
