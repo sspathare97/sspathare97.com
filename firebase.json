@@ -17,6 +17,11 @@
         "source": "/resume",
         "destination": "/docs/Sagar-Pathare-Resume-2022-08-05.pdf",
         "type": 302
+      },
+      {
+        "source": "/meet",
+        "destination": "https://calendly.com/sagar-pathare/0",
+        "type": 301
       }
     ]
   }
